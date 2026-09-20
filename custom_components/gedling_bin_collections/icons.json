@@ -1,0 +1,30 @@
+{
+  "entity": {
+    "sensor": {
+      "next_collection": {
+        "default": "mdi:delete-clock"
+      },
+      "general_collection": {
+        "default": "mdi:trash-can"
+      },
+      "recycling_collection": {
+        "default": "mdi:recycle"
+      },
+      "glass_collection": {
+        "default": "mdi:glass-fragile"
+      },
+      "garden_collection": {
+        "default": "mdi:leaf"
+      }
+    },
+    "binary_sensor": {
+      "collection_tomorrow": {
+        "default": "mdi:delete-outline",
+        "state": {
+          "on": "mdi:delete-alert",
+          "off": "mdi:delete-outline"
+        }
+      }
+    }
+  }
+}

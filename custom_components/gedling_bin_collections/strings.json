@@ -1,0 +1,58 @@
+{
+  "title": "Gedling Bin Collections",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect your Gedling bin calendar",
+        "description": "On the Gedling bin collection website, search for your address, open the full/yearly collection-days calendar, then copy the final URL from your browser's address bar and paste it below.",
+        "data": {
+          "calendar_url": "Yearly collection calendar URL"
+        },
+        "data_description": {
+          "calendar_url": "The address-specific waste.digital.gedling.gov.uk URL containing webpage_token after you have selected your property and opened the yearly calendar."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not connect to the Gedling bin collection website.",
+      "invalid_url": "Enter the final address-specific Gedling yearly calendar URL, not the bin-collection search page.",
+      "invalid_or_expired": "The saved Gedling calendar URL could not be opened. Generate a fresh yearly calendar URL on the council website.",
+      "no_calendar_data": "The URL opened, but no yearly collection data was found. Make sure you copied the full/yearly collection-days page."
+    },
+    "abort": {
+      "already_configured": "This Gedling bin calendar is already configured."
+    }
+  },
+  "options": {
+    "step": {}
+  },
+  "config_subentries": {},
+  "services": {},
+  "issues": {},
+  "selector": {},
+  "exceptions": {},
+  "entity": {
+    "binary_sensor": {
+      "collection_tomorrow": {
+        "name": "Collection tomorrow"
+      }
+    },
+    "sensor": {
+      "next_collection": {
+        "name": "Next collection"
+      },
+      "general_collection": {
+        "name": "Next general waste collection"
+      },
+      "recycling_collection": {
+        "name": "Next recycling collection"
+      },
+      "glass_collection": {
+        "name": "Next glass collection"
+      },
+      "garden_collection": {
+        "name": "Next garden waste collection"
+      }
+    }
+  }
+}
